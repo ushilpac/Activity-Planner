@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addActivity_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.codepath.simpletodo.AddItemActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/addActivity_layout_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        app:titleMarginStart="25dp"
+        android:background="@android:color/holo_red_light">
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <TextView
+        android:id="@+id/addActivity_layout_title_view"
+        android:layout_below="@+id/addActivity_layout_toolBar"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/addActivity_tile"/>
+
+    <EditText
+        android:id="@+id/addActivity_layout_title_edit"
+        android:layout_width="280dp"
+        android:layout_below="@+id/addActivity_layout_toolBar"
+        android:layout_height="60dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@+id/addActivity_layout_title_view"
+        android:layout_toEndOf="@+id/addActivity_layout_title_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="@string/addActivity_title_hint"/>
+
+
+    <View style="@style/Divider"
+        android:id="@+id/addActivity_layout_blank1"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/addActivity_layout_title_edit"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/addActivity_layout_date_view"
+        android:layout_below="@+id/addActivity_layout_blank1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/addActivity_dueDate_view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"/>
+
+
+    <DatePicker
+        android:id="@+id/addActivity_layout_datePicker"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addActivity_layout_blank1"
+        android:layout_toRightOf="@+id/addActivity_layout_date_view"
+        android:layout_toEndOf="@+id/addActivity_layout_date_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        style="@style/DatePickerTheme"/>
+
+    <View style="@style/Divider"
+        android:id="@+id/addActivity_layout_blank2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/addActivity_layout_datePicker"
+        android:background="@android:color/darker_gray"/>
+    
+    <TextView
+        android:id="@+id/addActivity_layout_notes_view"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:textColor="@android:color/black"
+        android:text="@string/addActivity_notes_view"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/addActivity_layout_blank2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addActivity_layout_notes_edit_text"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/addActivity_layout_notes_view"
+        android:layout_toEndOf="@+id/addActivity_layout_notes_view"
+        android:layout_below="@+id/addActivity_layout_blank2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="@string/addActivity_notes_hint"/>
+
+    <View style="@style/Divider"
+        android:id="@+id/addActivity_layout_blank3"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/addActivity_layout_notes_edit_text"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/addActivity_layout_priority_view"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textColor="@android:color/black"
+        android:text="@string/addActivity_priority_view"
+        android:layout_below="@+id/addActivity_layout_blank3"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/addActivity_layout_spinner_priority"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addActivity_layout_blank3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@+id/addActivity_layout_priority_view"
+        android:layout_toEndOf="@+id/addActivity_layout_priority_view"/>
+
+    <View style="@style/Divider"
+        android:id="@+id/addActivity_layout_blank4"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/addActivity_layout_spinner_priority"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/addActivity_layout_status_view"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textColor="@android:color/black"
+        android:text="@string/addActivity_status_view"
+        android:layout_below="@+id/addActivity_layout_blank4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/addActivity_layout_spinner_status"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addActivity_layout_blank4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@+id/addActivity_layout_status_view"
+        android:layout_toEndOf="@+id/addActivity_layout_status_view"/>
+
+    <View style="@style/Divider"
+        android:id="@+id/addActivity_layout_blank5"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/addActivity_layout_spinner_status"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/addActivity_layout_category_view"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textColor="@android:color/black"
+        android:text="@string/addActivity_category_view"
+        android:layout_below="@+id/addActivity_layout_blank5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/addActivity_layout_spinner_category"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/addActivity_layout_blank5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@+id/addActivity_layout_category_view"
+        android:layout_toEndOf="@+id/addActivity_layout_category_view"/>
+
+
+</RelativeLayout>
+
+</ScrollView>

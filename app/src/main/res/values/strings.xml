@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Activity Planner</string>
+
+
+    <string-array name="priority_array">
+        <item>LOW</item>
+        <item>HIGH</item>
+        <item>MEDIUM</item>
+    </string-array>
+
+    <string-array name="status_array">
+        <item>PENDING</item>
+        <item>DONE</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>PERSONAL</item>
+        <item>WORK</item>
+        <item>OTHER</item>
+    </string-array>
+
+    <!-- IDs for  add_item_activity -->
+    <string name="addActivity_tile">Title</string>
+    <string name="addActivity_title_hint">e.g. Conference Wednesday </string>
+    <string name="addActivity_dueDate_view">DueDate</string>
+    <string name="addActivity_notes_view">Task Notes</string>
+    <string name="addActivity_notes_hint">e.g. Conference wednesday at 7 p.m.</string>
+    <string name="addActivity_priority_view">Priority</string>
+    <string name="addActivity_status_view">Status</string>
+    <string name="addActivity_category_view">Category</string>
+
+    <!-- Ids for display Activity-->
+
+    <string name="displayActivity_tile">Title</string>
+    <string name="displayActivity_title_hint">e.g. Conference Wednesday </string>
+    <string name="displayActivity_dueDate_view">DueDate</string>
+    <string name="displayActivity_notes_view">Task Notes</string>
+    <string name="displayActivity_notes_hint">e.g. Conference wednesday at 7 p.m.</string>
+    <string name="displayActivity_priority_view">Priority</string>
+    <string name="displayActivity_status_view">Status</string>
+    <string name="displayActivity_category_view">Category</string>
+
+    <!-- Ids for splash activity -->
+    <string name="splashActivity_app_name">Activity Planner</string>
+    <string name="splashActivity_text_view">YOUR EASY GOAL LIST. </string>
+
+</resources>
